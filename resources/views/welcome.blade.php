@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landwind - Tailwind CSS Landing Page Demo</title>
+    <link rel="shortcut icon" href="/img/logo.JPG" type="image/x-icon">
 
     <!-- Meta SEO -->
     <meta name="title" content="Landwind - Tailwind CSS Landing Page">
@@ -45,15 +46,18 @@
 <body>
     <header class=" w-full">
         <nav class="bg-white border-gray-200 py-2.5 ">
-            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="#" class="flex items-center">
-                    <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Landwind</span>
+            <div class="flex flex-wrap items-center justify-center max-w-screen-xl px-4 mx-auto">
+                <a href="#" class="hidden lg:block lg:flex justify-center">
+                    <img src="/img/logomain.PNG" class="lg:h-24 xl:mr-[700px] lg:mr-[475px] xs:h-12"
+                        alt="Landwind Logo" />
                 </a>
-                <div class="flex items-center lg:order-2">
+                <a href="#" class="block lg:hidden lg:flex justify-center">
+                    <img src="/img/logo.JPG" class="lg:h-24 mr-3 xs:h-12" alt="Landwind Logo" />
+                </a>
+                <div class="hidden lg:block flex justify-between items-center lg:order-2">
                     <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
                     <a href="https://themesberg.com/product/tailwind-css/landing-page"
-                        class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Deliver</a>
+                        class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:mx-5 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Deliver</a>
                     <button data-collapse-toggle="mobile-menu-2" type="button"
                         class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="mobile-menu-2" aria-expanded="false">
@@ -84,14 +88,6 @@
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
-                        </li>
-                        <li>
-                            <a href="#"
                                 class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
                         </li>
                         <li>
@@ -115,10 +111,10 @@
             </div>
             <div class="mx-auto max-w-2xl">
                 <div class="text-center">
-                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online
-                        business</h1>
-                    <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt.
-                        Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Delivering Excellence, One
+                        Mile at a Time.</h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">Choose Moon rides for on-time deliveries,
+                        personalized service, and a commitment to excellence.</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <a href="#"
                             class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's
@@ -279,45 +275,52 @@
             <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
                 <div class="text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2
-                        class="mb-4 text-[55px] leading-[50px] font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        class="mb-4 text-[40px] leading-[45px] md:text-[55px] md:leading-[50px] font-extrabold tracking-tight text-gray-900 dark:text-white">
                         The best
                         delivery drivers you have ever seen</h2>
                     <p class="mb-8 font-light lg:text-xl">First, they carried You. <br>
                         Now, they carry your packages for You.</p>
                 </div>
-                <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/feature-1.png"
-                    alt="dashboard feature image">
+
+                <div class="lg:pl-20">
+                    <img class="hidden w-[350px] h-[350px] mb-4 rounded-lg lg:mb-0 lg:flex" src="/img/img1.jpeg"
+                        alt="dashboard feature image">
+                </div>
             </div>
             <!-- Row -->
             <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-                <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/feature-2.png"
-                    alt="feature image 2">
+                <div class="lg:pl-20">
+                    <img class="hidden w-[350px] h-[350px] mb-4 rounded-lg lg:mb-0 lg:flex" src="/img/IMG_7795.JPG"
+                        alt="feature image 2">
+                </div>
                 <div class="text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2
-                        class="mb-4 text-[55px] leading-[50px] font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        class="mb-4 text-[40px] leading-[45px] md:text-[55px] md:leading-[50px] font-extrabold tracking-tight text-gray-900 dark:text-white">
                         Quality
                         riders and partners ready to deliver </h2>
-                    <p class="mb-8 font-light lg:text-xl">With Pilots and G-Partners all over Lagos, there will always
-                        be one nearby to pick up your parcels and more.</p>
+                    <p class="mb-8 font-light lg:text-xl">With Pilots and Partners stationed throughout Abuja, you can
+                        always count on having one nearby to handle your parcels and more.</p>
                     <a href="#"
                         class="rounded-md bg-indigo-600 px-7 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's
-                        Help You Deliver</a>
+                        Assist with Delivery</a>
                 </div>
             </div>
             <!-- Row -->
             <div class="items-center gap-8  pb-12 lg:grid lg:grid-cols-2 xl:gap-16 ">
                 <div class="text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2
-                        class="mb-4 text-[55px] leading-[50px] font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        class="mb-4 text-[40px] leading-[45px] md:text-[55px] md:leading-[50px] font-extrabold tracking-tight text-gray-900 dark:text-white">
                         Got a bike?</h2>
-                    <p class="mb-8 font-light lg:text-xl">If you’re a bike owner and are looking to double your earning
-                        capacity, we want you on the Gokada Team. Join the G-Partner team to increase your earnings</p>
+                    <p class="mb-8 font-light lg:text-xl">If you own a bike and want to boost your income potential,
+                        we invite you to join the Moonrides Team. Partner with us to enhance your earnings.</p>
                     <a href="#"
                         class="rounded-md bg-indigo-600 px-7 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's
                         Partner With Us!</a>
                 </div>
-                <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/feature-1.png"
-                    alt="dashboard feature image">
+                <div class="lg:pl-20">
+                    <img class="hidden w-[350px] h-[350px] mb-4 rounded-lg lg:mb-0 lg:flex" src="/img/img3.jpeg"
+                        alt="dashboard feature image">
+                </div>
             </div>
         </div>
     </section>
@@ -326,10 +329,11 @@
     <section class="bg-gray-200 ">
         <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
             <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-                <h1 class="mb-5 md:text-[55px] md:leading-[50px] font-extrabold text-gray-800 sm:text-xl">
+                <h1
+                    class="mb-5 text-[40px] leading-[45px] md:text-[55px] md:leading-[50px] font-extrabold text-gray-800">
                     We Deliver More than Parcels</h1>
             </div>
-            <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+            <div class="space-y-8 flex flex-col items-center lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                 <!-- Pricing Card -->
                 <div class="flex flex-col max-w-lg text-gray-900 bg-slate-950 rounded-3xl overflow-hidden shadow">
                     <img src="/img/hungry.jpg" alt="">
@@ -384,8 +388,8 @@
     <!-- End block -->
     <!-- Start block -->
     <section class="bg-gray-50 dark:bg-gray-800">
-        <div class="max-w-screen-xl max-h-screen px-4 py-8 mx-auto text-center lg:py-20 lg:px-6">
-            <div class="grid grid-cols-2 gap-20">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-20 lg:px-6">
+            <div class="grid gap-10 lg:grid-cols-2 lg:gap-20">
                 <div class="">
                     <figure class="max-w-screen-md mx-auto">
                         <svg class="h-12 mx-auto mb-2 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27"
@@ -395,10 +399,9 @@
                                 fill="currentColor" />
                         </svg>
                         <blockquote>
-                            <p class="text-xl font-light italic text-gray-900 md:text-2xl dark:text-white">"Aystech &
-                                Wheels
-                                took my MacBook game up a notch! It's fast, looks sleek, and just fits perfectly with my
-                                techie lifestyle."</p>
+                            <p class="text-xl font-light italic text-gray-900 md:text-2xl dark:text-white">"Moon Rides
+                                took our shipping worries to the stars! Fast, reliable, and always on point. A stellar
+                                logistics partner!"</p>
                         </blockquote>
                         <figcaption class="flex items-center justify-center mt-6 space-x-3">
                             <img class="w-6 h-6 rounded-full"
@@ -421,10 +424,9 @@
                                 fill="currentColor" />
                         </svg>
                         <blockquote>
-                            <p class="text-xl font-light italic text-gray-900 md:text-2xl dark:text-white">"Got my cool
-                                phone
-                                from Aystech & Wheels, and it's a total winner. Super easy to use, has all the fancy
-                                features, and just looks great!"</p>
+                            <p class="text-xl font-light italic text-gray-900 md:text-2xl dark:text-white">"Absolutely
+                                over the moon with Moon Rides! Their logistics prowess and commitment to excellence have
+                                elevated our shipping game."</p>
                         </blockquote>
                         <figcaption class="flex items-center justify-center mt-6 space-x-3">
                             <img class="w-6 h-6 rounded-full"
@@ -447,10 +449,9 @@
                                 fill="currentColor" />
                         </svg>
                         <blockquote>
-                            <p class="text-xl font-light italic text-gray-900 md:text-2xl dark:text-white">"Aystech &
-                                Wheels
-                                made my car choice easy. Smart features that make driving way cooler – my commute just
-                                got a tech upgrade!"</p>
+                            <p class="text-xl font-light italic text-gray-900 md:text-2xl dark:text-white">"Moon Rides
+                                delivers beyond expectations! Seamless service, timely arrivals, and a team that truly
+                                cares about our cargo."</p>
                         </blockquote>
                         <figcaption class="flex items-center justify-center mt-6 space-x-3">
                             <img class="w-6 h-6 rounded-full"
@@ -473,10 +474,9 @@
                                 fill="currentColor" />
                         </svg>
                         <blockquote>
-                            <p class="text-xl font-light italic text-gray-900 md:text-2xl dark:text-white">"Found the
-                                coolest
-                                phone accessories at Aystech & Wheels. From trendy cases to nifty gadgets, they've added
-                                some serious fun to my mobile experience."</p>
+                            <p class="text-xl font-light italic text-gray-900 md:text-2xl dark:text-white">"Moon Rides
+                                doesn't just transport packages; they launch them into a new era of efficiency. A
+                                logistics experience that's out of this world!"</p>
                         </blockquote>
                         <figcaption class="flex items-center justify-center mt-6 space-x-3">
                             <img class="w-6 h-6 rounded-full"
@@ -514,7 +514,8 @@
         class="relative w-[100vw] w-full h-[100vh] bg-blend-darken bg-center bg-cover flex flex-col items-center justify-center px-12 py-10">
         <div class="absolute inset-0 bg-black opacity-75"></div>
 
-        <div class="w-full grid grid-cols-2 items-center justify-center relative mb-16 px-52">
+        <div
+            class="w-full grid px-28 place-items-center my-8 gap-10 lg:grid-cols-2  items-center justify-center relative mb-16 lg:px-52">
             <div class="rounded-full overflow-hidden h-80 w-80">
                 <img class="w-full h-full object-cover" src="/img/idan1.jpg" alt="">
             </div>
@@ -525,149 +526,117 @@
                     values we've instilled into them from the beginning.
                 </h1>
                 <p class="text-white text-xl pt-4 font-semibold">Deborah Olusanu</p>
-                <p class="text-white text-sm font-light italic">Founder of Moon Rides</p>
+                <p class="text-white text-sm font-light italic">C0-Founder of Moon Rides</p>
             </div>
         </div>
     </div>
+    {{-- <div style="background: url('/img/debsbg.jpg')"
+        class="relative w-[100vw] w-full h-[100vh] bg-blend-darken bg-cover bg-no-repeat flex flex-col items-center justify-center px-12 py-10">
+        <div class="absolute inset-0 bg-black opacity-75"></div>
+
+        <div
+            class="w-full grid px-28 place-items-center my-8 gap-10 lg:grid-cols-2  items-center justify-center relative mb-16 lg:px-52">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-300">
+                    The level of care and customer service our pilots provide is a testament to the filtering, training,
+                    and
+                    values we've instilled into them from the beginning.
+                </h1>
+                <p class="text-white text-xl pt-4 font-semibold">Deborah Olusanu</p>
+                <p class="text-white text-sm font-light italic">C0-Founder of Moon Rides</p>
+            </div>
+            <div class="rounded-full overflow-hidden h-80 w-80">
+                <img class="w-full h-full object-cover" src="/img/debs.jpeg" alt="">
+            </div>
+
+        </div>
+    </div> --}}
     <!-- End block -->
     <!-- Start block -->
     <section class="bg-white ">
         <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:pt-24 lg:px-6 ">
-            <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-700 lg:mb-8 lg:text-[55px]">
-                Frequently asked questions</h2>
-            <div class="max-w-screen-md mx-auto">
-                <div id="accordion-flush" data-accordion="collapse"
-                    data-active-classes="bg-white  text-gray-900 dark:text-white"
-                    data-inactive-classes="text-gray-500 dark:text-gray-400">
-                    <h3 id="accordion-flush-heading-1">
-                        <button type="button"
-                            class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 bg-white border-b border-gray-200 dark:border-gray-700  dark:text-white"
-                            data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
-                            aria-controls="accordion-flush-body-1">
-                            <span>Can I use Landwind in open-source projects?</span>
-                            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
-                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Landwind is an open-source library of
-                                interactive components built on top of Tailwind CSS including buttons, dropdowns,
-                                modals, navbars, and more.</p>
-                            <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
-                                    href="#" class="text-purple-600 dark:text-purple-500 hover:underline">get
-                                    started</a> and start developing websites even faster with components on top of
-                                Tailwind CSS.</p>
-                        </div>
+            <div class="pt-4">
+                <h2
+                    class="mb-6 p-6 bg-gray-100 text-[40px] leading-[45px] md:text-[55px] md:leading-[50px] font-extrabold tracking-tight text-center text-gray-700 lg:mb-8">
+                    Frequently Asked Questions</h2>
+            </div>
+            <div class="max-w-screen-md py-4 mx-auto">
+                <div class="bg-white text-gray-900">
+                    <div>
+                        <h3 class="text-xl font-bold leading-10">
+                            How can I place a delivery request?
+                        </h3>
+                        <p class="mb-2 text-xl italic font-light text-gray-500">To schedule a delivery, simply log in
+                            to your account on our website and follow the straightforward steps to place a request. You
+                            can also contact our customer service for assistance.
+
+                        </p>
+                        <hr class="border-t-2 border-gray-400">
                     </div>
-                    <h3 id="accordion-flush-heading-2">
-                        <button type="button"
-                            class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
-                            data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
-                            aria-controls="accordion-flush-body-2">
-                            <span>Is there a Figma file available?</span>
-                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Landwind is first conceptualized and
-                                designed using the Figma software so everything you see in the library has a design
-                                equivalent in our Figma file.</p>
-                            <p class="text-gray-500 dark:text-gray-400">Check out the <a href="#"
-                                    class="text-purple-600 dark:text-purple-500 hover:underline">Figma design
-                                    system</a> based on the utility classes from Tailwind CSS and components from
-                                Landwind.</p>
-                        </div>
+                    <div>
+                        <h3 class="text-xl font-bold leading-10">
+                            What areas do you serve?
+                        </h3>
+                        <p class="mb-2 text-xl italic font-light text-gray-500">We proudly offer our dispatch services
+                            across Abuja. Check our coverage map on the website for detailed information.
+                        </p>
+                        <hr class="border-t-2 border-gray-400">
                     </div>
-                    <h3 id="accordion-flush-heading-3">
-                        <button type="button"
-                            class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
-                            data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
-                            aria-controls="accordion-flush-body-3">
-                            <span>What are the differences between Landwind and Tailwind UI?</span>
-                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
-                                components from Landwind are open source under the MIT license, whereas Tailwind UI
-                                is a
-                                paid product. Another difference is that Landwind relies on smaller and standalone
-                                components, whereas Tailwind UI offers sections of pages.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using
-                                both
-                                Landwind, Landwind Pro, and even Tailwind UI as there is no technical reason
-                                stopping
-                                you from using the best of two worlds.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:
-                            </p>
-                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-                                <li><a href="#"
-                                        class="text-purple-600 dark:text-purple-500 hover:underline">Landwind
-                                        Pro</a>
-                                </li>
-                                <li><a href="#"
-                                        class="text-purple-600 dark:text-purple-500 hover:underline">Tailwind
-                                        UI</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div>
+                        <h3 class="text-xl font-bold leading-10">
+                            What types of items can I dispatch?
+                        </h3>
+                        <p class="mb-2 text-xl italic font-light text-gray-500">We accommodate a wide range of items,
+                            from documents to parcels and larger cargo. For specific inquiries, feel free to reach out
+                            to our customer support team.
+                        </p>
+                        <hr class="border-t-2 border-gray-400">
                     </div>
-                    <h3 id="accordion-flush-heading-4">
-                        <button type="button"
-                            class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
-                            data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
-                            aria-controls="accordion-flush-body-4">
-                            <span>What about browser support?</span>
-                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
-                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
-                                components from Landwind are open source under the MIT license, whereas Tailwind UI
-                                is a
-                                paid product. Another difference is that Landwind relies on smaller and standalone
-                                components, whereas Tailwind UI offers sections of pages.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using
-                                both
-                                Landwind, Landwind Pro, and even Tailwind UI as there is no technical reason
-                                stopping
-                                you from using the best of two worlds.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:
-                            </p>
-                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-                                <li><a href="#"
-                                        class="text-purple-600 dark:text-purple-500 hover:underline">Landwind
-                                        Pro</a>
-                                </li>
-                                <li><a href="#"
-                                        class="text-purple-600 dark:text-purple-500 hover:underline">Tailwind
-                                        UI</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div>
+                        <h3 class="text-xl font-bold leading-10">
+                            How can I track my delivery?
+                        </h3>
+                        <p class="mb-2 text-xl italic font-light text-gray-500">Tracking your delivery is easy. Once
+                            your request is confirmed, you’ll receive a unique tracking code. Enter this on our website,
+                            and you’ll get real-time updates on your delivery status.
+                        </p>
+                        <hr class="border-t-2 border-gray-400">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold leading-10">What are your delivery timeframes?
+                        </h3>
+                        <p class="mb-2 text-xl italic font-light text-gray-500">Delivery times vary based on factors
+                            like distance and urgency. We provide estimated delivery times during the request process,
+                            and you can track the progress to stay informed.
+                        </p>
+                        <hr class="border-t-2 border-gray-400">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold leading-10">How do you ensure the safety of my items?
+                        </h3>
+                        <p class="mb-2 text-xl italic font-light text-gray-500">We prioritize the safety and security
+                            of your items. Our team is trained to handle items with care, and we use advanced tracking
+                            systems to monitor deliveries throughout the journey.
+                        </p>
+                        <hr class="border-t-2 border-gray-400">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold leading-10">What payment methods do you accept?
+                        </h3>
+                        <p class="mb-2 text-xl italic font-light text-gray-500">We accept a variety of payment methods,
+                            including credit/debit cards and other secure online payment options. Details can be found
+                            during the checkout process.
+                        </p>
+                        <hr class="border-t-2 border-gray-400">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold leading-10">What happens if my item is damaged or lost during
+                            delivery?
+                        </h3>
+                        <p class="mb-2 text-xl italic font-light text-gray-500">While we take every precaution to
+                            prevent such incidents, we have a comprehensive insurance policy. Please contact our
+                            customer service team, and we’ll guide you through the claims process.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -676,7 +645,7 @@
     <!-- End block -->
     <footer class="bg-white dark:bg-gray-800">
         <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
-            <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+            {{-- <div class="grid place-items-center grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
                 <div>
                     <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h3>
                     <ul class="text-gray-500 dark:text-gray-400">
@@ -688,9 +657,6 @@
                         </li>
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Brand Center</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -742,23 +708,12 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h3>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">iOS</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Android</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Windows</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">MacOS</a>
-                        </li>
-                    </ul>
-                </div>
+            </div> --}}
+            <div class="flex items-center font-semibold text-center justify-center text-xl text-gray-200">
+                <h1>Have questions or need assistance?
+                    <br> Contact our friendly team at 08136657373 / 08133202750
+                    We're here to help!
+                </h1>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
             <div class="text-center">
