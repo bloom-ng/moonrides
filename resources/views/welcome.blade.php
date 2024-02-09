@@ -510,23 +510,42 @@
     </section>
     <!-- End block -->
     <!-- Start block -->
-    <div style="background: url('/img/idan2.jpg')"
+    <div style="background: url('/img/images (1).jpg'); 
+                background-repeat: no-repeat;
+                background-size: cover;"
         class="relative w-[100vw] w-full h-[100vh] bg-blend-darken bg-center bg-cover flex flex-col items-center justify-center px-12 py-10">
         <div class="absolute inset-0 bg-black opacity-75"></div>
 
         <div
-            class="w-full grid px-28 place-items-center my-8 gap-10 lg:grid-cols-2  items-center justify-center relative mb-16 lg:px-52">
-            <div class="rounded-full overflow-hidden h-80 w-80">
-                <img class="w-full h-full object-cover" src="/img/idan1.jpg" alt="">
+            class="w-full grid place-items-center my-8 gap-16 lg:grid-cols-2 items-center justify-center relative mb-16 md:px-10">
+            <div class="grid lg:grid-cols-2 place-items-center text-center lg:text-left  justify-between">
+                <div class="rounded-full overflow-hidden h-32 w-32 md:h-40 md:w-40">
+                    <img class="w-full h-full object-cover" src="/img/DSC_2278.jpg" alt="">
+                </div>
+                <div class="pt-4">
+                    <h1 class="text-sm md:text-lg lg:text-2xl font-bold text-white">
+                        The level of care and customer service our pilots provide is a testament to the filtering,
+                        training,
+                        and
+                        values we've instilled into them from the beginning.
+                    </h1>
+                    <p class="text-gray-300 text-xl pt-4 uppercase font-semibold">Deborah Olusanu</p>
+                    <p class="text-gray-300 text-sm font-light italic">C0-Founder of Moon Rides</p>
+                </div>
             </div>
-            <div>
-                <h1 class="text-3xl font-bold text-gray-300">
-                    The level of care and customer service our pilots provide is a testament to the filtering, training,
-                    and
-                    values we've instilled into them from the beginning.
-                </h1>
-                <p class="text-white text-xl pt-4 font-semibold">Deborah Olusanu</p>
-                <p class="text-white text-sm font-light italic">C0-Founder of Moon Rides</p>
+            <div class="grid lg:grid-cols-2 place-items-center text-center lg:text-left  justify-between">
+                <div class="rounded-full overflow-hidden h-40 w-40">
+                    <img class="w-full h-full object-cover" src="/img/ejiro.jpg" alt="">
+                </div>
+                <div class="pt-4">
+                    <h1 class="text-sm md:text-lg lg:text-2xl font-bold text-white">
+                        We navigate challenges with precision, turning complexity into seamless deliveries, and
+                        transforming aspirations into the rhythm of supply chain success.
+                    </h1>
+                    <p class="text-gray-300 text-xl pt-4 font-semibold">AKPODIETE
+                        EJIRO UBINI</p>
+                    <p class="text-gray-300 text-sm font-light italic">C0-Founder of Moon Rides</p>
+                </div>
             </div>
         </div>
     </div>
